@@ -1,17 +1,23 @@
-<?xml version="1.0"?>
-<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
-         xmlns:NC="http://home.netscape.com/NC-rdf#"
-         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <RDF:Description RDF:about="rdf:#$VVyNm"
-                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-                   em:minVersion="4.0"
-                   em:maxVersion="14.*"
-                   em:updateLink="https://github.com/wagnerand/Tagiris/dist/tagiris.xpi" />
-  <RDF:Seq RDF:about="rdf:#$RVyNm">
-    <RDF:li RDF:resource="rdf:#$SVyNm"/>
-  </RDF:Seq>
-  <RDF:Description RDF:about="rdf:#$SVyNm"
-                   em:version="0.7">
-    <em:targetApplication RDF:resource="rdf:#$VVyNm"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <RDF:Description about="urn:mozilla:extension:tagiris@andreaswagner.org">
+    <em:updates>
+      <RDF:Seq>
+        <RDF:li>
+          <RDF:Description>
+            <em:version>0.8</em:version>
+            <em:targetApplication>
+              <RDF:Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>4.0</em:minVersion>
+                <em:maxVersion>14.*</em:maxVersion>
+                <em:updateLink>https://raw.github.com/wagnerand/Tagiris/master/dist/tagiris.xpi</em:updateLink>
+              </RDF:Description>
+            </em:targetApplication>
+          </RDF:Description>
+        </RDF:li>
+      </RDF:Seq>
+    </em:updates>
   </RDF:Description>
 </RDF:RDF>

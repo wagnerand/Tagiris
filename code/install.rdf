@@ -12,13 +12,13 @@
                    em:description="Endlich haben Tags eine Bedeutung!"
                    em:creator="Andreas Wagner" />
   <RDF:Description RDF:about="urn:mozilla:install-manifest"
-                   em:id="tagiris@opendfki.de"
+                   em:id="tagiris@andreaswagner.org"
                    em:type="2"
                    em:version="0.8"
                    em:name="Tagiris"
                    em:description="Finally, tags have a purpose!"
                    em:creator="Andreas Wagner"
-                   em:updateURL="https://github.com/wagnerand/Tagiris/dist/update.rdf">
+                   em:updateURL="https://raw.github.com/wagnerand/Tagiris/master/dist/update.rdf">
     <em:targetApplication RDF:resource="rdf:#$UwteT2"/>
     <em:localized RDF:resource="rdf:#$c0HYx"/>
   </RDF:Description>
