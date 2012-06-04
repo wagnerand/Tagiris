@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+     Tagiris - a Firefox Extension
+     Copyright (C) 2010 Andreas Wagner
+-->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://Tagiris/skin/toolbar.css" type="text/css"?>
+
+<overlay id="menuoverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script type="application/x-javascript" src="chrome://Tagiris/content/toolbar.js" />
+
+    <toolbox id="navigator-toolbox">
+        <toolbar id="TagirisRootToolbar"
+                 mode="icons" iconsize="small" defaulticonsize="small"
+                 lockiconsize="true"
+                 class="chromeclass-directories"
+                 context="toolbar-context-menu"
+                 defaultset="personal-bookmarks"
+                 toolbarname="Tagiris Toolbar"
+                 collapsed="true"
+                 customizable="false">
+            <toolbaritem flex="1" id="tagiris-bookmarks" title="tagiris-bookmarks"
+                    removable="false">
+                <hbox flex="1"
+                        id="TagirisToolbar"
+                        context="placesContext"
+                        onclick="BookmarksEventHandler.onClick(event, this._placesView);"
+                        oncommand="BookmarksEventHandler.onCommand(event, this._placesView);"
+                        tooltip="bhTooltip"
+                        popupsinherittooltip="true">
+                    <toolbarbutton class="bookmark-item bookmarks-toolbar-customize"
+                            mousethrough="never"
+                            label="Tag IRIS"/>
+                    <hbox flex="1">
+                        <hbox align="center">
+                            <image id="TagirisToolbarDropIndicator"
+                                    mousethrough="always"
+                                    collapsed="true"/>
+                        </hbox>
+                        <toolbaritem id="TagirisSearchBoxItem" title="Tagiris Search">
+                            <textbox id="TagirisSearchBox"
+                                    type="autocomplete"
+                                    accesskey="C"
+                                    width="180"
+                                    flex="1"
+                                    class="padded"
+                                    clickSelectsAll="true"
+                                    autocompletesearch="places-tag-autocomplete tagiris-related-tags"
+                                    completedefaultindex="false"
+                                    tabscrolling="true"
+                                    showcommentcolumn="true"
+                                    newlines="replacewithspaces"
+                                    oninput="Tagiris.showContextResults();"
+                                    timeout="700"
+                                    emptytext="Enter comma-separated Tags"/>
+                        </toolbaritem>
+                        <scrollbox orient="horizontal"
+                                id="TagirisToolbarItems"
+                                flex="1"/>
+                        <toolbarbutton type="menu"
+                                id="TagirisChevron"
+                                class="chevron"
+                                mousethrough="never"
+                                collapsed="true"
+                                tooltiptext="TagirisChevron"
+                                onpopupshowing="document.getElementById('TagirisToolbar')._placesView._onChevronPopupShowing(event);">
+                            <menupopup id="TagirisChevronPopup"
+                                    placespopup="true"
+                                    tooltip="bhTooltip" popupsinherittooltip="true"
+                                    context="placesContext"/>
+                        </toolbarbutton>
+                    </hbox>
+                </hbox>
+            </toolbaritem>
+        </toolbar>
+    </toolbox>
+
+</overlay>

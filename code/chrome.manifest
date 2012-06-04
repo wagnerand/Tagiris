@@ -1,0 +1,8 @@
+content		Tagiris				chrome/content/
+skin		Tagiris	classic/1.0	chrome/skin/
+resource	Tagiris 			modules/
+
+overlay	chrome://browser/content/browser.xul chrome://Tagiris/content/overlay.xul
+
+component {dbaf1efb-c7e7-4b7a-88ee-e36458309a4b} components/autocomplete.js
+contract @mozilla.org/autocomplete/search;1?name=tagiris-related-tags {dbaf1efb-c7e7-4b7a-88ee-e36458309a4b}

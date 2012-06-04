@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$UwteT2"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="4.0"
+                   em:maxVersion="14.*" />
+  <Description RDF:about="rdf:#$c0HYx"
+                   em:locale="de-DE"
+                   em:name="Tagiris"
+                   em:description="Endlich haben Tags eine Bedeutung!"
+                   em:creator="Andreas Wagner" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="tagiris@opendfki.de"
+                   em:type="2"
+                   em:version="0.8"
+                   em:name="Tagiris"
+                   em:description="Finally, tags have a purpose!"
+                   em:creator="Andreas Wagner"
+                   em:updateURL="https://github.com/wagnerand/Tagiris/dist/update.rdf">
+    <em:targetApplication RDF:resource="rdf:#$UwteT2"/>
+    <em:localized RDF:resource="rdf:#$c0HYx"/>
+  </RDF:Description>
+</RDF:RDF>
