@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="rdf:#$VVyNm"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="4.0"
+                   em:maxVersion="14.*"
+                   em:updateLink="https://github.com/wagnerand/Tagiris/dist/tagiris.xpi" />
+  <RDF:Seq RDF:about="rdf:#$RVyNm">
+    <RDF:li RDF:resource="rdf:#$SVyNm"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="rdf:#$SVyNm"
+                   em:version="0.7">
+    <em:targetApplication RDF:resource="rdf:#$VVyNm"/>
+  </RDF:Description>
+</RDF:RDF>
