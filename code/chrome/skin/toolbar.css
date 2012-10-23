@@ -1,3 +1,7 @@
-#tagiris-searchbox #treecolAutoCompleteValue {
-	visibility: collapse;
+#navigator-toolbox[customizing] > #TagirisRootToolbar > #tagiris-bookmarks > #TagirisToolbar > .bookmarks-toolbar-customize {
+     display: -moz-box;
+}
+
+#navigator-toolbox[customizing] > #TagirisRootToolbar > #tagiris-bookmarks > #TagirisToolbar > hbox > #TagirisToolbarItems {
+     display: none;
 }
