@@ -5,7 +5,7 @@
   <RDF:Description RDF:about="rdf:#$UwteT2"
                    em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
                    em:minVersion="4.0"
-                   em:maxVersion="14.*" />
+                   em:maxVersion="18.*" />
   <Description RDF:about="rdf:#$c0HYx"
                    em:locale="de-DE"
                    em:name="Tagiris"
