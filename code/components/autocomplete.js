@@ -221,6 +221,7 @@ TagirisAutoCompleteSearch.prototype = {
 	    	}
 			isInputTag = false;
 		}
+
 	    tagCountArray = sortByNumericValue(tagCountArray);	// sorts the associative array by values (appearCount)
 	    for (var tag in tagCountArray) {
 	    	comments.push(tagCountArray[tag] + (tagCountArray[tag] > 1 ? " Bookmarks" : " Bookmark"));
