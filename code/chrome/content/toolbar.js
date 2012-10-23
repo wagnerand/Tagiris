@@ -34,8 +34,6 @@ if (!Tagiris) {
             this.toolbar._addEventListeners(this.toolbar._rootElt, ["overflow", "underflow"], true);
             this.toolbar._addEventListeners(window, ["resize", "unload"], false);
 
-            PlacesViewBase.call(this.toolbar, null);
-
             this.searchBox.value = this.prefs.getCharPref("contextTags");
             this.showContextResults.call(this);
 
@@ -95,7 +93,7 @@ if (!Tagiris) {
                 }
             }
         }
-        
+
     };
 }
 
